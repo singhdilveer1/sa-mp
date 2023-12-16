@@ -1,0 +1,43 @@
+<html>
+<title> SA-MP Server on 64bit</title>
+    <header class="article-header clearfix">
+      <h1>
+ Installing 32-bit libs on a 64-bit Linux system</h1>
+    </header>
+<body>
+    <div class="subtle-wrap">
+      <div class="article-body">
+        <h3>Installing 32-bit libs on a 64-bit Linux system:</h3>
+<h2><font color="red">Note - Although only Ubuntu 12.04 and 13.04 are mentioned. These commands have been tested and they work on 20.04 and above. (LAST TESTED ON - 22/October/2023)</font></h3>
+<p>Many Linux games are built using a 32-bit architecture and so to run them on a 64-bit system you will need to add the necessary 32-bit libraries to your Linux distribution.</p>
+<ol>
+<li>To install 32-bit libraries on <strong>Ubuntu 12.04 LTS</strong> (64-bit), open Terminal and type <em>sudo apt-get install ia32-libs lib32stdc++6</em> (you will need to enter your password).</li>
+<li>Then just for good measure, let's make sure your Ubuntu is up to date. Type <em>sudo apt-get update</em> and lastly, restart your computer.</li>
+</ol>
+<hr>
+<ol>
+<li>To install 32-bit libraries on <strong>Ubuntu 13.04</strong> (64-bit) or later, open Terminal and type:<br> <em>sudo apt-get install lib32z1</em> (you will need to enter your password).</li>
+<li>Then just for good measure, let's make sure your Ubuntu is up to date. Type <em>sudo apt-get update</em> and lastly, restart your computer.</li>
+</ol>
+<p>Note: Other libraries that might help are:&nbsp;<em>sudo apt-get install libgtk2.0-0:i386 libidn11:i386 libglu1-mesa:i386 libxmu6:i386</em><br>and some of this: <em>sudo apt-get install libpangox-1.0-0:i386 libpangoxft-1.0-0:i386</em></p>
+<hr>
+<p>Now you should be able to install and launch your Linux games that require the 32-bit libs. During the installation process look for any README files that may mention needing to install additional dependencies. If so, here is the syntax needed <em>sudo apt-get install package-name:i386</em> (replace package-name with the package you are needing to install). Example: <em>sudo apt-get install libasound2-plugins:i386</em></p>
+      </div>
+
+      <div class="article-attachments">
+        
+      </div>
+
+
+
+
+
+------
+<ul>
+<li>This information has been derived from - <a href="https://support.humblebundle.com/hc/en-us/articles/202759400-Installing-32-bit-libs-on-a-64-bit-Linux-system">here</a> (unavailable).
+</li>
+<li>Wayback Machine - <a href="https://web.archive.org/web/20141117110412/https://support.humblebundle.com/hc/en-us/articles/202759400-Installing-32-bit-libs-on-a-64-bit-Linux-system">here</a>.
+</li>
+</ul>
+</body>
+</html>
